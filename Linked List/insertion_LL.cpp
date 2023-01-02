@@ -79,8 +79,8 @@ int main()
     four->data = 85;
     four->next = NULL;
 
-       head = insertbetween(head , 4 ,112);
-    // head = insertatfirst(head , 2);
+    //    head = insertbetween(head , 4 ,112);
+    head = insertatfirst(head , 2);
     // head = insertatend(head , 99);
 
     traversal(head);
