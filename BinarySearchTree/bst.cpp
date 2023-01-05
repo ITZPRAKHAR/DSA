@@ -16,42 +16,42 @@ class Node{
 
 };
 
-void LeveOrderTraversal(Node *root)
-{
-    queue<Node *> q;
+// void LeveOrderTraversal(Node *root)
+// {
+//     queue<Node *> q;
 
-    q.push(root);
+//     q.push(root);
 
-    while (!q.empty())
-    {
-        Node *curr = q.front();
-        q.pop();
-        cout << curr->data << " ";
+//     while (!q.empty())
+//     {
+//         Node *curr = q.front();
+//         q.pop();
+//         cout << curr->data << " ";
 
-        if (curr->left != NULL)
-        {
-            q.push(curr->left);
-        }
+//         if (curr->left != NULL)
+//         {
+//             q.push(curr->left);
+//         }
 
-        if (curr->right != NULL)
-        {
-            q.push(curr->right);
-        }
-    }
-}
-
-// Node*insertIntoBST(Node*root , int d){
-//     if(root == NULL){
-//         root = new Node(d);
-//         return root;
-//     }
-//     if(d > root->data ){
-//         root->right = insertIntoBST(root->right,d);
-//     }
-//     else{
-//         root->left = insertIntoBST(root->left,d);
+//         if (curr->right != NULL)
+//         {
+//             q.push(curr->right);
+//         }
 //     }
 // }
+
+Node*insertIntoBST(Node*root , int d){
+    if(root == NULL){
+        root = new Node(d);
+        return root;
+    }
+    if(d > root->data ){
+        root->right = insertIntoBST(root->right,d);
+    }
+    else{
+        root->left = insertIntoBST(root->left,d);
+    }
+}
 
 
 
@@ -97,8 +97,8 @@ int main(){
 
     takeinput(ccd);
     cout<<"Printing BST "<<endl;
-    LeveOrderTraversal(ccd);
-    // inorder(root);
+    // LeveOrderTraversal(ccd);
+    inorder(ccd);
 
 return 0;
 }
