@@ -43,6 +43,9 @@ public:
         }
     }
 
+
+// function to delte the root node
+
     void deleteRoot(){
         arr[1] = arr[size];
         size = size-1;
