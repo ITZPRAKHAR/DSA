@@ -33,3 +33,7 @@
 
 .vscode
 .idea
+.elf
+heap_creation
+heapify
+hashmap
