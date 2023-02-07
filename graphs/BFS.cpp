@@ -51,7 +51,7 @@ int main()
     addEdge(graph, 2, 5);
     addEdge(graph, 2, 4);
 
-    int initial_node = 0;
+    int initial_node = 2;
 
     bfs(graph, initial_node);
 

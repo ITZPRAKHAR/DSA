@@ -38,7 +38,7 @@ int main()
     addEdge(graph, 0, 3);
     addEdge(graph, 0, 2);
     addEdge(graph, 1, 2);
-    
+
     int start_node = 0;
 
     dfs(graph, visited, start_node);

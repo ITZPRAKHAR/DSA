@@ -56,7 +56,7 @@ Node*insertIntoBST(Node*root , int d){
 
 
 Node*BSTcreate(Node*root , int d){
-    if(!root ){
+    if(!root ){ 
         return new Node(d);
     }
     else if (d > root->data)
