@@ -50,9 +50,9 @@ cout<<m.size()<<endl;
 
 //Printing complete data using itreator
 
-unordered_map<string , int> :: iterator it = m.begin();
+unordered_map<string , int> :: iterator it;
 
-while (it != m.end())
+for (it =  m.begin(); it!= m.end(); it++)
 {
     cout<<it->first<<" "<<it->second<<endl;
     it++;

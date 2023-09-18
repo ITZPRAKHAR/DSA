@@ -28,7 +28,7 @@ void print_graph(vector<int> graph[])
 int main()
 {
 
-   vector<int> graph[v];
+   vector<int> graph[v];  
 
    addedge(graph, 0, 1);
    addedge(graph, 0, 5);

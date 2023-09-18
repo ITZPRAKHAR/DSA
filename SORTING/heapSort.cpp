@@ -31,7 +31,7 @@ public:
             {
                 return;
             }
-        }
+        } 
     }
 
     void printHeap()

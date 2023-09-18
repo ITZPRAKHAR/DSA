@@ -39,3 +39,4 @@ heapify
 hashmap
 CMakeLists.txt
 cmake-build-debug
+output/
