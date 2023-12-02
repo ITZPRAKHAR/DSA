@@ -21,7 +21,7 @@ int fibo(int n){
     return dp[n];
 }
 
-int fiboSpace(int n){
+int fiboSpaceOptimize(int n){
    if(n<=0){
     return n;
    }
@@ -40,7 +40,7 @@ int fiboSpace(int n){
 }
 int main (){
    //your code goes here
-   cout<<fiboSpace(3);
+   cout<<fiboSpaceOptimize(0);
     
    return 0;
 }

@@ -21,7 +21,7 @@ int main(){
 
     int arr[10] = {1 , 9 , 10};
 
-    priority_queue<int>pq(arr , arr+3); 
+    priority_queue<int , vector<int> , greater<int>>pq(arr , arr+3); 
 
     while(pq.empty()== false){
       cout<<pq.top()<<" ";
