@@ -15,15 +15,13 @@ int main(){
     // pq.push(45);
     // pq.push(55);
     // pq.push(65);
-
-
     //Pushinng whole array in a priority queue to make its heap --->
 
     int arr[10] = {1 , 9 , 10};
 
     priority_queue<int , vector<int> , greater<int>>pq(arr , arr+3); 
 
-    while(pq.empty()== false){
+    while(pq.empty() == false){
       cout<<pq.top()<<" ";
       pq.pop();
     }

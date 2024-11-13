@@ -23,7 +23,6 @@ int main(){
         cin>>c;
         v1.push_back(c);                     
     }
-
     display(v1);
 
 return 0;

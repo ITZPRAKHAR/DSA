@@ -11,6 +11,8 @@ using namespace std;
 #define pii pair<int, int>
 #define forn(i , n) for(auto i = 0;  i<n; i++)
 
+int term[1000];
+// this is bottom to up 
 int fibo(int n){
     vector<int>dp(n+1);
     dp[1] = 1;
@@ -21,6 +23,25 @@ int fibo(int n){
     return dp[n];
 }
 
+//meoization code here .. top to down
+
+int mimfibo(int n){
+	if(n <=1){
+		return n;
+	}
+	
+	if(term[n] != 0){
+		return term[n];
+	}
+	else {
+		term[n] = mimfibo(n-1) + mimfibo(n-2);
+		return term[n];
+	}
+	
+}
+
+
+// space optimization of the fibo bttom up 
 int fiboSpaceOptimize(int n){
    if(n<=0){
     return n;
@@ -40,7 +61,10 @@ int fiboSpaceOptimize(int n){
 }
 int main (){
    //your code goes here
-   cout<<fiboSpaceOptimize(0);
+   
+   cout<<fiboSpaceOptimize(6)<<endl;
+   cout<<mimfibo(6);
+   
     
    return 0;
 }
